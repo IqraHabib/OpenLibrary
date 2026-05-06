@@ -1,0 +1,795 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\hp\\Desktop\\Open library\\playwright.config.ts",
+    "rootDir": "C:/Users/hp/Desktop/Open library/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/hp/Desktop/Open library/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/hp/Desktop/Open library/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 180000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "on-failure",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "home.spec.ts",
+      "file": "home.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "OpenLibrary Automation Suite",
+          "file": "home.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "1. Open homepage and verify site loads",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10180,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🌐 Navigating to OpenLibrary homepage...\n"
+                        },
+                        {
+                          "text": "⏱️  Page fully loaded in 10136ms\n"
+                        },
+                        {
+                          "text": "✅ Verifying homepage elements...\n"
+                        },
+                        {
+                          "text": "✅ Homepage verification complete\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to OpenLibrary homepage",
+                          "duration": 10136
+                        },
+                        {
+                          "title": "Verify homepage is loaded and search bar is visible",
+                          "duration": 41
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:14:21.406Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-00961-epage-and-verify-site-loads-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-6b9fbd48acfda3729e3d",
+              "file": "home.spec.ts",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "2. Search for Biology books",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23609,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🌐 Navigating to OpenLibrary homepage...\n"
+                        },
+                        {
+                          "text": "⏱️  Page fully loaded in 4254ms\n"
+                        },
+                        {
+                          "text": "🔍 Searching for: \"Biology\"\n"
+                        },
+                        {
+                          "text": "⏱️  Search completed in 18946ms\n"
+                        },
+                        {
+                          "text": "📋 Checking search results visibility...\n"
+                        },
+                        {
+                          "text": "✅ Search results page confirmed\n"
+                        },
+                        {
+                          "text": "Collected 20 titles from page 1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Navigate to homepage",
+                          "duration": 4255
+                        },
+                        {
+                          "title": "Enter \"Biology\" in search bar and submit",
+                          "duration": 18949
+                        },
+                        {
+                          "title": "Verify search results page is visible",
+                          "duration": 131
+                        },
+                        {
+                          "title": "Collect and store page 1 book titles",
+                          "duration": 109
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:14:32.421Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automation-Suite-2-Search-for-Biology-books-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-3fd5fc3ac59613c4810c",
+              "file": "home.spec.ts",
+              "line": 41,
+              "column": 3
+            },
+            {
+              "title": "3. Navigate to page 2 with human verification handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1458,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📄 Initiating navigation to page 2...\n"
+                        },
+                        {
+                          "text": "⬇️  Scrolling to bottom of page...\n"
+                        },
+                        {
+                          "text": "✅ Scrolled to bottom\n"
+                        },
+                        {
+                          "text": "👆 Clicking page 2 button...\n"
+                        },
+                        {
+                          "text": "✅ Page 2 button clicked\n"
+                        },
+                        {
+                          "text": "✅ Navigation to page 2 completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure search results are available",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Scroll to bottom and click page 2 button",
+                          "duration": 1392
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:14:56.072Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-9d493-human-verification-handling-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-027473ea6b1e8de2871a",
+              "file": "home.spec.ts",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "4. Verify page 2 URL and human verification completion",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16330,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔗 Verifying page 2 URL...\n"
+                        },
+                        {
+                          "text": "⚠️  Bot detection triggered - handling human verification\n"
+                        },
+                        {
+                          "text": "🎯 Target URL: /search?q=Biology&mode=everything&page=2\n"
+                        },
+                        {
+                          "text": "🔍 Checking for human verification...\n"
+                        },
+                        {
+                          "text": "🤖 Human verification detected - clicking verify button...\n"
+                        },
+                        {
+                          "text": "✅ Verification button clicked\n"
+                        },
+                        {
+                          "text": "⏳ Waiting for redirect to page 2...\n"
+                        },
+                        {
+                          "text": "✅ Successfully verified page 2 URL!\n"
+                        },
+                        {
+                          "text": "📍 Current URL: https://openlibrary.org/search?q=Biology&mode=everything&page=2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Ensure page 2 navigation was triggered",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Handle human verification and confirm page 2 URL",
+                          "duration": 16250
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:14:57.569Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-3a70f-man-verification-completion-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-cad026b701efaeefb4dd",
+              "file": "home.spec.ts",
+              "line": 77,
+              "column": 3
+            },
+            {
+              "title": "5. Verify page 2 results differ from page 1 results",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 198,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "\nPage 1 titles (20):\n"
+                        },
+                        {
+                          "text": "  1. Biology\n"
+                        },
+                        {
+                          "text": "  2. Campbell biology\n"
+                        },
+                        {
+                          "text": "  3. Molecular biology of the cell\n"
+                        },
+                        {
+                          "text": "  4. Biology: California Edition\n"
+                        },
+                        {
+                          "text": "  5. Objective NCERT at your FINGERTIPS for NEET-AIIMS - Biology\n"
+                        },
+                        {
+                          "text": "  6. Biology\n"
+                        },
+                        {
+                          "text": "  7. Biology: Concepts and Applications\n"
+                        },
+                        {
+                          "text": "  8. Biology: Concepts & Connections\n"
+                        },
+                        {
+                          "text": "  9. Human biology\n"
+                        },
+                        {
+                          "text": "  10. Molecular biology of amphibian development\n"
+                        },
+                        {
+                          "text": "  11. Molecular biology of the gene\n"
+                        },
+                        {
+                          "text": "  12. Marine biology\n"
+                        },
+                        {
+                          "text": "  13. Cell and molecular biology: concepts and experiments\n"
+                        },
+                        {
+                          "text": "  14. International Review of Cell and Molecular Biology\n"
+                        },
+                        {
+                          "text": "  15. Botany: An Introduction to Plant Biology\n"
+                        },
+                        {
+                          "text": "  16. Essential cell biology\n"
+                        },
+                        {
+                          "text": "  17. Developmental biology\n"
+                        },
+                        {
+                          "text": "  18. Behave: The Biology of Humans at Our Best and Worst\n"
+                        },
+                        {
+                          "text": "  19. Introductory plant biology\n"
+                        },
+                        {
+                          "text": "  20. Brock biology of microorganisms\n"
+                        },
+                        {
+                          "text": "\nPage 2 titles (20):\n"
+                        },
+                        {
+                          "text": "  1. Cell and molecular biology\n"
+                        },
+                        {
+                          "text": "  2. Campbell Biology\n"
+                        },
+                        {
+                          "text": "  3. Essential biology\n"
+                        },
+                        {
+                          "text": "  4. Advances in Medicine and Biology\n"
+                        },
+                        {
+                          "text": "  5. Brock, biology of microorganisms.\n"
+                        },
+                        {
+                          "text": "  6. Molecular cell biology\n"
+                        },
+                        {
+                          "text": "  7. Biology of plants\n"
+                        },
+                        {
+                          "text": "  8. Biology\n"
+                        },
+                        {
+                          "text": "  9. Ecology and field biology.\n"
+                        },
+                        {
+                          "text": "  10. Complete NEET Guide Biology\n"
+                        },
+                        {
+                          "text": "  11. Biology\n"
+                        },
+                        {
+                          "text": "  12. Molecular cell biology\n"
+                        },
+                        {
+                          "text": "  13. A short guide to writing about biology\n"
+                        },
+                        {
+                          "text": "  14. Cell biology\n"
+                        },
+                        {
+                          "text": "  15. Essential Biology with Physiology\n"
+                        },
+                        {
+                          "text": "  16. Biology\n"
+                        },
+                        {
+                          "text": "  17. Biology: How Life Works\n"
+                        },
+                        {
+                          "text": "  18. Biology\n"
+                        },
+                        {
+                          "text": "  19. Campbell Biology: Concepts and Connections\n"
+                        },
+                        {
+                          "text": "  20. Biology Textbook for Class - 12 - 12083\n"
+                        },
+                        {
+                          "text": "\nMatching titles count: 2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Collect page 2 book titles",
+                          "duration": 130
+                        },
+                        {
+                          "title": "Print page 1 titles",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Print page 2 titles",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Assert page 1 and page 2 titles do not match",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:15:13.920Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-8120b--differ-from-page-1-results-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-a13cfc221a973640f39e",
+              "file": "home.spec.ts",
+              "line": 95,
+              "column": 3
+            },
+            {
+              "title": "6. Validate search API returns correct limit and numFound",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4369,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "docs array length: 12\n"
+                        },
+                        {
+                          "text": "numFound: 187292\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Call search API with q=space and limit=12",
+                          "duration": 4277
+                        },
+                        {
+                          "title": "Assert docs array length is exactly 12",
+                          "duration": 3
+                        },
+                        {
+                          "title": "Assert numFound is a number greater than the limit",
+                          "duration": 6
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:15:14.137Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-c6aaa--correct-limit-and-numFound-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-101b4ca16a8ca3de797e",
+              "file": "home.spec.ts",
+              "line": 123,
+              "column": 3
+            },
+            {
+              "title": "7. Sort by First published and validate against API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7570,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📊 Opening Relevance dropdown...\n"
+                        },
+                        {
+                          "text": "📊 Clicking First published...\n"
+                        },
+                        {
+                          "text": "✅ Results sorted by First published\n"
+                        },
+                        {
+                          "text": "First UI title: \"General Biology Study Guide and Laboratory Manual ()\"\n"
+                        },
+                        {
+                          "text": "First API title: \"General Biology Study Guide and Laboratory Manual ()\"\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Sort results by First published",
+                          "duration": 6483
+                        },
+                        {
+                          "title": "Capture first book title from UI",
+                          "duration": 137
+                        },
+                        {
+                          "title": "Call API with q=Biology&sort=old",
+                          "duration": 854
+                        },
+                        {
+                          "title": "Assert UI first title matches API first title",
+                          "duration": 2
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:15:18.530Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-2467a-ed-and-validate-against-API-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-7c4c8c6bb0519ecb8e65",
+              "file": "home.spec.ts",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "8. Filter by Spanish language and verify results update",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5910,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Heading before: \"Search Books\"\n"
+                        },
+                        {
+                          "text": "🌐 Opening website language selector...\n"
+                        },
+                        {
+                          "text": "🌐 Selecting \"Spanish\"...\n"
+                        },
+                        {
+                          "text": "✅ Language \"Spanish\" selected\n"
+                        },
+                        {
+                          "text": "Heading after: \"Buscar libros\"\n"
+                        },
+                        {
+                          "text": "Visible results: 20\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Capture page heading before language change",
+                          "duration": 114
+                        },
+                        {
+                          "title": "Open language selector and select Spanish",
+                          "duration": 5551
+                        },
+                        {
+                          "title": "Capture page heading after language change",
+                          "duration": 57
+                        },
+                        {
+                          "title": "Assert heading changed to reflect Spanish language",
+                          "duration": 58
+                        },
+                        {
+                          "title": "Assert at least one result is visible",
+                          "duration": 63
+                        }
+                      ],
+                      "startTime": "2026-05-06T21:15:26.126Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\hp\\Desktop\\Open library\\test-results\\home-OpenLibrary-Automatio-1b37c-e-and-verify-results-update-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-56d0214c2af1e8787587",
+              "file": "home.spec.ts",
+              "line": 173,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-06T21:14:20.455Z",
+    "duration": 72276,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

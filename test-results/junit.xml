@@ -1,0 +1,145 @@
+<testsuites id="" name="" tests="8" failures="0" skipped="0" errors="0" time="72.276">
+<testsuite name="home.spec.ts" timestamp="2026-05-06T21:14:20.707Z" hostname="chromium" tests="8" failures="0" skipped="0" time="69.624" errors="0">
+<testcase name="OpenLibrary Automation Suite › 1. Open homepage and verify site loads" classname="home.spec.ts" time="10.18">
+<system-out>
+<![CDATA[🌐 Navigating to OpenLibrary homepage...
+⏱️  Page fully loaded in 10136ms
+✅ Verifying homepage elements...
+✅ Homepage verification complete
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-00961-epage-and-verify-site-loads-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 2. Search for Biology books" classname="home.spec.ts" time="23.609">
+<system-out>
+<![CDATA[🌐 Navigating to OpenLibrary homepage...
+⏱️  Page fully loaded in 4254ms
+🔍 Searching for: "Biology"
+⏱️  Search completed in 18946ms
+📋 Checking search results visibility...
+✅ Search results page confirmed
+Collected 20 titles from page 1
+
+[[ATTACHMENT|home-OpenLibrary-Automation-Suite-2-Search-for-Biology-books-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 3. Navigate to page 2 with human verification handling" classname="home.spec.ts" time="1.458">
+<system-out>
+<![CDATA[📄 Initiating navigation to page 2...
+⬇️  Scrolling to bottom of page...
+✅ Scrolled to bottom
+👆 Clicking page 2 button...
+✅ Page 2 button clicked
+✅ Navigation to page 2 completed
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-9d493-human-verification-handling-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 4. Verify page 2 URL and human verification completion" classname="home.spec.ts" time="16.33">
+<system-out>
+<![CDATA[🔗 Verifying page 2 URL...
+⚠️  Bot detection triggered - handling human verification
+🎯 Target URL: /search?q=Biology&mode=everything&page=2
+🔍 Checking for human verification...
+🤖 Human verification detected - clicking verify button...
+✅ Verification button clicked
+⏳ Waiting for redirect to page 2...
+✅ Successfully verified page 2 URL!
+📍 Current URL: https://openlibrary.org/search?q=Biology&mode=everything&page=2
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-3a70f-man-verification-completion-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 5. Verify page 2 results differ from page 1 results" classname="home.spec.ts" time="0.198">
+<system-out>
+<![CDATA[
+Page 1 titles (20):
+  1. Biology
+  2. Campbell biology
+  3. Molecular biology of the cell
+  4. Biology: California Edition
+  5. Objective NCERT at your FINGERTIPS for NEET-AIIMS - Biology
+  6. Biology
+  7. Biology: Concepts and Applications
+  8. Biology: Concepts & Connections
+  9. Human biology
+  10. Molecular biology of amphibian development
+  11. Molecular biology of the gene
+  12. Marine biology
+  13. Cell and molecular biology: concepts and experiments
+  14. International Review of Cell and Molecular Biology
+  15. Botany: An Introduction to Plant Biology
+  16. Essential cell biology
+  17. Developmental biology
+  18. Behave: The Biology of Humans at Our Best and Worst
+  19. Introductory plant biology
+  20. Brock biology of microorganisms
+
+Page 2 titles (20):
+  1. Cell and molecular biology
+  2. Campbell Biology
+  3. Essential biology
+  4. Advances in Medicine and Biology
+  5. Brock, biology of microorganisms.
+  6. Molecular cell biology
+  7. Biology of plants
+  8. Biology
+  9. Ecology and field biology.
+  10. Complete NEET Guide Biology
+  11. Biology
+  12. Molecular cell biology
+  13. A short guide to writing about biology
+  14. Cell biology
+  15. Essential Biology with Physiology
+  16. Biology
+  17. Biology: How Life Works
+  18. Biology
+  19. Campbell Biology: Concepts and Connections
+  20. Biology Textbook for Class - 12 - 12083
+
+Matching titles count: 2
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-8120b--differ-from-page-1-results-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 6. Validate search API returns correct limit and numFound" classname="home.spec.ts" time="4.369">
+<system-out>
+<![CDATA[docs array length: 12
+numFound: 187292
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-c6aaa--correct-limit-and-numFound-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 7. Sort by First published and validate against API" classname="home.spec.ts" time="7.57">
+<system-out>
+<![CDATA[📊 Opening Relevance dropdown...
+📊 Clicking First published...
+✅ Results sorted by First published
+First UI title: "General Biology Study Guide and Laboratory Manual ()"
+First API title: "General Biology Study Guide and Laboratory Manual ()"
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-2467a-ed-and-validate-against-API-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="OpenLibrary Automation Suite › 8. Filter by Spanish language and verify results update" classname="home.spec.ts" time="5.91">
+<system-out>
+<![CDATA[Heading before: "Search Books"
+🌐 Opening website language selector...
+🌐 Selecting "Spanish"...
+✅ Language "Spanish" selected
+Heading after: "Buscar libros"
+Visible results: 20
+
+[[ATTACHMENT|home-OpenLibrary-Automatio-1b37c-e-and-verify-results-update-chromium\test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
