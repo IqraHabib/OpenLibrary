@@ -125,7 +125,7 @@ npx playwright show-trace test-results/<test-folder>/trace.zip
 | 4 | Verify page 2 URL and human verification completion | UI |
 | 5 | Verify page 2 results differ from page 1 results | UI |
 | 6 | Validate search API returns correct limit and numFound | API |
-| 7 | Sort by First published and validate against API | UI + API |
+| 7 | Sort by old and validate against API | UI + API |
 | 8 | Filter by Spanish language and verify results update | UI |
 
 ---
